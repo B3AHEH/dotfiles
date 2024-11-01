@@ -10,21 +10,21 @@ Welcome to my dotfiles repository! This repository contains my personal configur
 
 ## Contents
 
-- **`btop`**: Configuration files and themes for btop.
-- **`kitty`**: Configuration files for the Kitty terminal emulator.
-- **`neofetch`**: Custom configuration for neofetch, including logo.
-- **`nvim`**: My personal Neovim configuration, referred to as 0xVim.
-- **`ranger`**: Configuration for the ranger file manager.
-- **`sketchybar`**: Configuration files for the SketchyBar status bar.
-- **`skhd`**: Key binding configuration for skhd.
-- **`yabai`**: Configuration files for the yabai window manager.
+- **`btop`**: Configuration files and themes for [`btop`](https://github.com/aristocratos/btop).
+- **`kitty`**: Configuration files for the [`kitty`](https://github.com/kovidgoyal/kitty) terminal emulator.
+- **`neofetch`**: Custom configuration for [`neofetch`](https://github.com/dylanaraps/neofetch), including logo.
+- **`nvim`**: My personal [`NeoVim`](https://github.com/neovim/neovim) configuration, referred to as [`0xVim`](https://github.com/B3AHEH/0xVim).
+- **`ranger`**: Configuration for the [`ranger`](https://github.com/ranger/ranger) file manager.
+- **`sketchybar`**: Configuration files for the [`sketchybar`](https://github.com/FelixKratz/SketchyBar) status bar.
+- **`skhd`**: Key binding configuration for [`skhd`](https://github.com/koekeishiya/skhd).
+- **`yabai`**: Configuration files for the [`yabai`](https://github.com/koekeishiya/yabai) window manager.
  
 ## Installation
 
 To set up my dotfiles on your system, simply run the installation script:
 
 ```bash
-    bash <(curl -s https://raw.githubusercontent.com/B3AHEH/dotfiles/main/osx_install.sh)
+bash <(curl -s https://raw.githubusercontent.com/B3AHEH/dotfiles/main/osx_install.sh)
 ```
 
 This command will automatically configure the necessary applications and settings for your environment. Before installing new configurations, the script will back up your existing configuration files to ensure that you can restore them if needed.
