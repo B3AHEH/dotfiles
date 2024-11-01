@@ -2,6 +2,12 @@
 
 Welcome to my dotfiles repository! This repository contains my personal configuration files for various tools and applications that I use across my systems, particularly on macOS and Arch Linux.
 
+## Overview
+
+![1](./.screenshots/1.jpg)
+
+![1](./.screenshots/2.jpg)
+
 ## Contents
 
 - **`btop`**: Configuration files and themes for btop.
@@ -25,6 +31,6 @@ This command will automatically configure the necessary applications and setting
 
 ## Acknowledgments
 
-- Thanks to the following individuals and their repositories for inspiring me while creating my configuration:
+Thanks to the following individuals and their repositories for inspiring me while creating my configuration:
 
 - [`Felix Kratz`](https://github.com/FelixKratz/dotfiles)
