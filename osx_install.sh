@@ -116,7 +116,7 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
-pringt_msg "log" "Installing configuration files..."
+print_msg "log" "Installing configuration files..."
 git clone --recurse-submodules git@github.com:B3AHEH/dotfiles.git $HOME/.dotfiles-temp
 
 folders=("btop" "kitty" "neofetch" "nvim" "ranger" "sketchybar" "skhd" "yabai")
@@ -150,7 +150,7 @@ rm -rf "$HOME/.dotfiles-temp"
 print_msg "log" "Directory: $HOME/.dotfiles-temp removed"
 
 # Remving NeoVim cache
-pringt_msg "log" "Removing NeoVim cache.."
+print_msg "log" "Removing NeoVim cache.."
 if [ -d "$HOME/.local/share/nvim" ]; then 
   rm -rf "$HOME/.local/share/nvim"
 fi
@@ -167,11 +167,11 @@ curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.
 source $HOME/.zshrc
 
 # Start Services
-pringt_msg "log" "Starting Services (grant permissions)..."
+print_msg "log" "Starting Services (grant permissions)..."
 brew services start skhd
 brew services start yabai
 brew services start sketchybar
 
 csrutil status
-pringt_msg "log" "Add sudoer manually:\n '$(whoami) ALL = (root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | awk "{print \$1;}") $(which yabai) --load-sa' to '/private/etc/sudoers.d/yabai'"
-pringt_msg "log" "Installation complete..."
+print_msg "log" "Add sudoer manually:\n '$(whoami) ALL = (root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | awk "{print \$1;}") $(which yabai) --load-sa' to '/private/etc/sudoers.d/yabai'"
+print_msg "log" "Installation complete..."
