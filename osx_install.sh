@@ -28,6 +28,7 @@ brew tap FelixKratz/formulae
 brew tap koekeishiya/formulae
 
 # Brew Formulae
+brew install git
 brew install mas
 brew install neovim
 brew install tree
@@ -86,13 +87,13 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock "mru-spaces" -bool "false"
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write com.apple.LaunchServices LSQuarantine -bool false
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
-defaults write NSGlobalDomain AppleHighlightColor -string "0.65098 0.85490 0.58431"
-defaults write NSGlobalDomain AppleAccentColor -int 1
+defaults write NSGlobalDomain AppleHighlightColor -string "0.7961 0.6510 0.9686"
+defaults write NSGlobalDomain AppleAccentColor -int 7
 defaults write com.apple.screencapture location -string "$HOME/Desktop"
 defaults write com.apple.screencapture disable-shadow -bool true
 defaults write com.apple.screencapture type -string "png"

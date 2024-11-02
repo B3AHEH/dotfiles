@@ -1,6 +1,4 @@
 # === Session defaults ===
-# reset border color in default mode
-:: default : yabai -m config active_window_border_color 0xE032CD32
 # kickstart yabai 
 hyper - y : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 # lock screen immediately
@@ -16,7 +14,7 @@ cmd + shift - s : osascript -e 'tell application "System Events" to sleep'
 cmd + shift - k : sudo killall -u $(whoami)
 # === launch commands ===
 # open kitty terminal, blazingly fast compared to iTerm/Hyper
-cmd - return : /Applications/kitty.app/Contents/MacOS/kitty -o allow_remote_control=no --single-instance -d ~
+cmd - return : /Applications/kitty.app/Contents/MacOS/kitty -o allow_remote_control=no -d ~
 # open waterfox
 cmd + shift - return : open -na /Applications/Waterfox.app
 # open fleet
